@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+    <div id="intro">
+
+        <h1>Quiz checking in with your Mental Health</h1>
+        <h2 id="Headertext"> How are you feeling right now?</h2> <br> 
+     
+
+
+    </div>
+
+
+    <div>
+
+        <input id="feeling">
+        <button on click="how they are ()"> Submit </button>
+
+
+    </div>
+
+
+
+
+    <style>
+       #intro{text-align: center; color: floralwhite;}
+       body{background-color: dimgrey;}
+
+    </style>
+
+
+<script>
+let feeling = document.querySelector("#feeling");
+let Headertext  = document.querySelector("#feeling");
+
+function how they are() {
+    Headertext.innerHTML =""
+   Headertext .innerHTML = "So glad you decided to do this quiz" + feeling.value + ", Welcome to the quiz "
+
+}
+</script>
+
+ 
+
+    
+
+</body>
+</html>

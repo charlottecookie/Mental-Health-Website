@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Quiz </title>
+
+    <style> 
+        #intro {text-align: center; color:darksalmon}
+        body {background-color:mistyrose;}
+    
+    </style>
+
+</head>
+<body>
+    <div id="intro">
+        <h1> Welcome to my Mental Health Quiz </h1>
+    </div>
+
+
+<div id="qn1"> 
+    <h3> How are you feeling right now? </h3>
+    <input id="userInput"> <br> <br> 
+    <button onclick="myFunction1()"> Submit </button>
+   <h1 id="submit1"> </h1>
+</div>
+
+<div id="qn2"> 
+<h3> What is something you are finding a bit difficult at the moment?</h3>
+<input id="userInput"> <br> <br> 
+<button onclick="myFunction2()">  Submit </button>
+<h1 id="submit"> </h1>
+</div>
+
+<div id="qn3"> 
+<h3> Is there any sort of support that would help you get through this tough time? </h2>
+<input id="userInput"> <br> <br> 
+<button onclick="myFunction3()"> Submit </button>
+<h2 id="submit"> </h2>
+</div>
+
+<div id="qn4">
+<h3> What was something that happened to you or you experienced that made you feel good?</h2>
+<input id="userInput"> <br> <br> 
+<button onclick="myFunction4()"> Submit </button>
+<h2 id="submit"> </h2>
+</div>
+
+<script>
+    let userInput = document.querySelector ("#userInput");
+    let finished = document.querySelector ("#submit");
+    let qn1 = document.querySelector('#qn1')
+    let qn2 = document.querySelector('#qn2')
+    let qn3 = document.querySelector ('#qn3')
+    let qn4 = document.querySelector ('#qn4')
+
+qn1.style.display ='block';
+qn2.style.display = 'none';
+qn3.style.display ='none';
+qn4.style.display ='none';
+
+function myFunction1() {
+qn1.style.display ='none';
+qn2.style.display = 'block';
+qn3.style.display ='none';
+qn4.style.display ='none';
+}
+
+function myFunction2() {
+qn1.style.display ='none'
+qn2.style.display ='none';
+qn3.style.display ='block';
+qn4.style.display ='none';
+}
+
+function myFunction3() {
+qn1.style.display ='none';
+qn2.style.display ='none';
+qn3.style.display ='none';
+qn4.style.display ='block';
+}
+
+message.innerHTML = "Thank you for taking this mental health quiz" +userInput;
+
+
+</script>
+</body>

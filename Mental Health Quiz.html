@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Quiz</title>
+</head>
+<body>
+<H1> Mental Health Quiz</H1>
+<p> Welcome to the Mental Health Quiz. This quiz is here to help you get an idea if you are currently struggling with your mental health </p>
+<p>Please answer the questions honestly and think carefully before submitting your answers.
+<p> This quiz is for personal use and can give an indication of underlying mental health issues. This should not be used as a method of self diagnosis.</p>
+</body>
+<div id="qn1"> 
+    <h2>On a scale of 1-10 (1 being not often, 10 being frequently) how often are worrying?</h2>
+    <input id="userInput"> <br> <br> 
+    <button onclick="myFunction1()"> Submit </button>
+   <h1 id="submit1"> </h1>
+</div>
+
+<div id="qn2">
+<h3>On a scale of 1-10 (1 being not often, 10 being frequently) do you feel overwhelmed and feel you are struggling at the moment?</h3>
+<input id="userInput"> <br> <br> 
+    <button onclick="myFunction2()"> Submit </button>
+   <h1 id="submit1"> </h1>
+
+</div>
+
+<div id="qn3">
+<h4>On a scale of 1-10 (1 being not often, 10 being frequently), do you feel your mood changes often easily?</h4>
+<input id="userInput"> <br> <br> 
+    <button onclick="myFunction3()"> Submit </button>
+   <h1 id="submit1"> </h1>
+
+
+</div>
+
+<div id="qn4">
+<h5>On a scale of 1-10 (1 being not often, 10 being frequently),do your realationships are being strained?</h5>
+<input id="userInput"> <br> <br> 
+    <button onclick="myFunction4()"> Submit </button>
+   <h1 id="submit1"> </h1>
+</div>
+
+<div id="qn5">
+<h6>On a scale of 1-10 (1 being not often, 10 being frequently),do you feel your energy levels are lower than normal?</h6>
+<input id="userInput"> <br> <br> 
+    <button onclick="myFunction5()"> Submit </button>
+   <h1 id="submit1"> </h1>
+
+
+
+</div>
+
+<div id="qn6">
+<h6>>On a scale of 1-10 (1 being not often, 10 being frequently,has your diet/eating habits being affect in a negative manner?</h2>
+<input id="userInput"> <br> <br> 
+    <button onclick="myFunction6()"> Submit </button>
+   <h1 id="submit1"> </h1>
+
+
+</div>
+
+<div id="qn7">
+<h6>On a scale of 1-10 (1 being not often, 10 being frequently, do you have any problems sleeping at night?</h2>
+<input id="userInput"> <br> <br> 
+    <button onclick="myFunction7()"> Submit </button>
+   <h1 id="submit1"> </h1>
+
+
+<p>If you have answered more often ; 6 or more out of 10 in this quiz, you may chose to seek the help of a mental health professional or see your doctor</p>
+<p>You can also refer to my helplines page for more information</p>
+
+
+</div>
+
+
+<script>
+    let userInput = document.querySelector ("#userInput");
+    let finished = document.querySelector ("#submit");
+    let qn1 = document.querySelector('#qn1')
+    let qn2 = document.querySelector('#qn2')
+    let qn3 = document.querySelector ('#qn3')
+    let qn4 = document.querySelector ('#qn4')
+    let qn5 = document.querySelector ('#qn5')
+    let qn6= document.querySelector ('#qn6')
+    let qn7= document.querySelector('#qn7')
+
+qn1.style.display ='block';
+qn2.style.display = 'none';
+qn3.style.display ='none';
+qn4.style.display ='none';
+qn5.style.display ='none';
+qn6.style.display ='none';
+qn7.style.display ='none';
+
+function myFunction1() {
+qn1.style.display ='none';
+qn2.style.display = 'block';
+qn3.style.display ='none';
+qn4.style.display ='none';
+qn5.style.display ='none';
+qn6.style.display ='none';
+qn7.style.display ='none';
+}
+
+function myFunction2() {
+qn1.style.display ='none'
+qn2.style.display ='none';
+qn3.style.display ='block';
+qn4.style.display ='none';
+qn6.style.display ='none';
+}
+
+function myFunction3() {
+qn1.style.display ='none';
+qn2.style.display ='none';
+qn3.style.display ='none';
+qn4.style.display ='block';
+qn5.style.display ='none';
+qn6.style.display ='none';
+qn7.style.display ='none';
+}
+
+message.innerHTML = "Thank you for taking this mental health quiz" +userInput;
+
+</script>
+</body>
+
+<style>
+body{background-color: lightcyan;}
+h1{text-align: center;color: rgb(133, 80, 168)}
+p{text-align: center;}
+#intro{text-align: center;color:rgb(133, 80, 168)}
+h2{text-align: center;color: rgb(133, 80, 168)}
+h3{text-align: center;color: rgb(133, 80, 168)}
+h4{text-align: center;color: rgb(133, 80, 168)}
+h5{text-align: center;color: rgb(133, 80, 168)}
+h6{text-align: center;color: rgb(133, 80, 168)}
+
+
+</style>
+
+
+
+
+</body>
+</html>
