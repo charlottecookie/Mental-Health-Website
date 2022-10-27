@@ -7,13 +7,51 @@
     <title>Mental Health Quiz</title>
 </head>
 <body>
+<div id="Intro">
+<h1>Mental Health Quiz</h1>
+<p> Welcome to the Mental Health Quiz. This quiz is here to help you get an idea if you are currently struggling with your mental health </p>
+<p>Please answer the questions honestly and think carefully before submitting your answers.</p>
+<p> This quiz is for personal use and can give an indication of underlying mental health issues. This should not be used as a method of self diagnosis.</p>
+<h2 id="headerText">On a scale of 1-10 (1 being not often, 10 being frequently) how often are worrying?</h2> <br>
+</div>
+
+<div>
+<div id="greetingInput"> 
+    <input id="userName"><br><br>
+<button onclick="greeting">Submit</button>
+
+</div>
+
+
+<style>
+#intro{text-align: center;}
+body{background-color: lightcyan;}
+#greetingInput{text-align: center;color:rgb(133, 80, 168)}
+
+</style>
+
+<script>
+let userName =document.querySelector("#userName");
+let headerText =document.querySelector("#headerText");
+let greetingInput =document.querySelector("#greetingInput");
+
+greetingInput.style.display
+
+function greeting(){
+    headerText.innerHTML=""
+    headerText.innerHTML="Hello" + userName.value{"Welcome to this Mental Health Quiz"}
+
+
+</script>
+
+
 <H1> Mental Health Quiz</H1>
 <p> Welcome to the Mental Health Quiz. This quiz is here to help you get an idea if you are currently struggling with your mental health </p>
-<p>Please answer the questions honestly and think carefully before submitting your answers.
+<p>Please answer the questions honestly and think carefully before submitting your answers.</p>
 <p> This quiz is for personal use and can give an indication of underlying mental health issues. This should not be used as a method of self diagnosis.</p>
 </body>
 <div id="qn1"> 
-    <h2>On a scale of 1-10 (1 being not often, 10 being frequently) how often are worrying?</h2>
+    <h2>On a scale of 1-10 (1 being not often, 10 being frequently) how often are worrying?</h2> <br>
     <input id="userInput"> <br> <br> 
     <button onclick="myFunction1()"> Submit </button>
    <h1 id="submit1"> </h1>
