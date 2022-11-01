@@ -2,49 +2,181 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>Mental Health Quiz </title>
+
+    <style> 
+        #intro {text-align: center; color:rgb(133, 80, 168)}
+        body {background-color:lightcyan;}
+        #question {text-align: center; color:rgb(133, 80, 168)}
+        p{text-align: center; color:rgb(133, 80, 168)}
+      
+        
+    </style>
+        
+  
+
 </head>
 <body>
-<div id="intro">
-<h1>Welcome to the Quiz</h1>
-<h2 id ="headerText"></h2>What is your name?</h2> <br> 
+    <div id="intro">
+        <h1>Welcome to the Mental Health Quiz. </h1>
+        <p>This quiz is here to help you get an idea if you are currently struggling with your mental health</p>
+        <p>Please answer the questions honestly and think carefully before submitting your answers.</p>
+        <p> This quiz is for personal use and can give an indication of underlying mental health issues. This should not be used as a method of self diagnosis. </p>
+    </div>        
+   
 
 
-
-
-
-
-<div>
-<input id="userName"> <br> <br>
-<button onclick="greeting()">Submit</button>
-
+<div id="qn1">
+    <h3 id="question">On a scale of 1-10 (1 being not often, 10 being frequently) how often are you worrying?</h3>
+    <input id="userInput"><br> <br>
+    <button onclick="myFunction1()">Submit</button>
 </div>
 
+<div id="qn2"> 
+<h3 id="question"> On a scale of 1-10 (1 being not often, 10 being frequently) do you feel overwhelmed and you are struggling at the moment?</h3>
+<input id="userInput"> <br> <br> 
+<button onclick="myFunction2()">  Submit </button>
+<h1 id="submit"> </h1>
+</div>
 
-<style> 
-#intro {text-align: center; color: floralwhite;}
-body {background-color: grey;}
+<div id="qn3"> 
+<h3 id="question">On a scale of 1-10 (1 being not often, 10 being frequently) Do you feel your mood changes often easily?</h3> 
+<input id="userInput"> <br> <br> 
+<button onclick="myFunction3()"> Submit </button>
+<h2 id="submit"> </h2>
+</div>
+
+<div id="qn4">
+<h3 id="question">On a scale of 1-10 (1 being not often, 10 being frequently) Do your feel your relationships are being strained? </h3> 
+<input id="userInput"> <br> <br> 
+<button onclick="myFunction4()"> Submit </button>
+<h2 id="submit"> </h2>
+</div>
+
+<div id="qn5">
+ <h3 id="question">On a scale of 1-10 (1 being not often, 10 being frequently) Do you feel your energy levels are lower than usual?</h3>
+ <input id="userInput"><br> <br>
+ <button onclick="myFunction5()">Submit </button>
+</div>
+
+<div id="qn6">
+    <h3 id="question">On a scale of 1-10 (1 being not often, 10 being frequently)Has your diet/eating habits been affected in a negative manner?</h3>
+    <input id="userInput"><br> <br>
+    <button onclick="myFunction6()">Submit </button>
+   </div>
+
+   <div id="qn7">
+    <h3 id="question">On a scale of 1-10 (1 being not often, 10 being frequently)Do you have any sleeping issues at night?</h3>
+    <input id="userInput"> <br> <br> 
+    <button onclick="myFunction7()">Submit </button>
+   </div>
+
+
+<message class="input">If you have answered more often; 6 or more out of 10 in this quiz, you may chose to seek the help of a mental health professional or see your doctor. You can also refer to my helplines page for more information</message>
+
+  
 
 
 
-</style>
 
 
 
-<script> 
-   let userName = document.querySelector("#userName");
-   let headerText = document.querySelector("#headerText");
+<script>
+    let userInput = document.querySelector ("#userInput");
+    let finished = document.querySelector ("#submit");
+    let qn1 = document.querySelector('#qn1')
+    let qn2 = document.querySelector('#qn2')
+    let qn3 = document.querySelector ('#qn3')
+    let qn4 = document.querySelector ('#qn4')
+    let qn5 = document.querySelector('#qn5')
+    let qn6 = document.querySelector('#qn6')
+    let qn7 = document.querySelector('#qn7')
+    
 
-function greeting() {
-    headerText.innerHTML= ""
-    headerText. innerHTML= "Hello  " + userName.value + ", welcome to the Quiz."
+qn1.style.display ='block';
+qn2.style.display = 'none';
+qn3.style.display ='none';
+qn4.style.display ='none';
+qn5.style.display ='none';
+qn6.style.display ='none';
+qn7.style.display ='none';
+
+function myFunction1() {
+qn1.style.display ='none';
+qn2.style.display = 'block';
+qn3.style.display ='none';
+qn4.style.display ='none';
+qn5.style.display ='none';
+qn6.style.display ='none';
+qn7.style.display ='none';
 }
 
+function myFunction2() {
+qn1.style.display ='none'
+qn2.style.display ='none';
+qn3.style.display ='block';
+qn4.style.display ='none';
+qn5.style.display ='none';
+qn6.style.display ='none';
+qn7.style.display ='none';
+}
+
+function myFunction3() {
+qn1.style.display ='none';
+qn2.style.display ='none';
+qn3.style.display ='none';
+qn4.style.display ='block';
+qn5.style.display ='none';
+qn6.style.display ='none';
+qn7.style.display ='none';
+}
+
+function myFunction4(){
+qn1.style.display= 'none';
+qn2.style.display= 'none';
+qn3.style.display= 'none';
+qn4.style.display= 'none';
+qn5.style.display= 'block';
+qn6.style.display ='none';
+qn7.style.display ='none';
+}
+
+function myFunction5(){
+qn1.style.display= 'none';
+qn2.style.display= 'none';
+qn3.style.display= 'none';
+qn4.style.display= 'none';
+qn5.style.display= 'none';
+qn6.style.display= 'block';
+qn7.style.display ='none';
+
+}
+
+function myFunction6(){
+qn1.style.display= 'none';
+qn2.style.display= 'none';
+qn3.style.display= 'none';
+qn4.style.display= 'none';
+qn5.style.display= 'none';
+qn6.style.display ='none';
+qn7.style.display ='block';
+}
+
+function myFunction7(){
+qn1.style.display= 'none';
+qn2.style.display= 'none';
+qn3.style.display= 'none';
+qn4.style.display= 'none';
+qn5.style.display= 'none';
+qn6.style.display ='none';
+qn7.style.display ='none';
+}
+
+
+
+
 </script>
-
-
-
 </body>
 </html>
